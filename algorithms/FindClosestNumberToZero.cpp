@@ -1,6 +1,6 @@
-/* Given an integer array nums of size n, return the number with the value closest to 0 in nums. If there are multiple answers, return the number with the largest value.
-
- 
+/* 
+Description:
+Given an integer array nums of size n, return the number with the value closest to 0 in nums. If there are multiple answers, return the number with the largest value.
 
 Example 1:
 
@@ -21,16 +21,16 @@ Explanation: 1 and -1 are both the closest numbers to 0, so 1 being larger is re
 */
 
 int findClosestNumber(vector<int>& nums) {
-        int closest = nums[0];
-        for (int i = 1; i < nums.size(); i++) {
-            if (abs(nums[i]) < abs(closest)) {
-                closest = nums[i];
-            }
-        }
-        
-        if (closest < 0 && find(nums.begin(), nums.end(), abs(closest)) != nums.end()) {
-            return abs(closest);
-        } else {
-            return closest;
+    int closest = nums[0];
+    for (int i = 1; i < nums.size(); i++) {
+        if (abs(nums[i]) < abs(closest)) {
+            closest = nums[i];
         }
     }
+        
+    if (closest < 0 && find(nums.begin(), nums.end(), abs(closest)) != nums.end()) {
+        return abs(closest);
+    } else {
+     return closest;
+    }
+}
