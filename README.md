@@ -4,4 +4,4 @@
 
 | #    | Title                                                       | Solution               | Difficulty |
 |------|-------------------------------------------------------------|------------------------|------------|
-| 1946 | [Largest Number After Mutating Substring](#)                | [C++](#), [Java](#)    | Medium     |
+| 2239 | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/description/)                | [C++](https://github.com/kyujin-c/LeetCode/blob/main/algorithms/FindClosestNumberToZero.cpp)   | Easy     |
